@@ -1,5 +1,5 @@
 <template>
-  <div class="form-group has-feedback" :class="[problems ? 'has-error' : '', cssClass]">
+  <div class="form-group has-feedback" :class="[problems ? 'has-danger' : '', cssClass]">
       <label v-show="label" class="control-label" :for="field">{{label}}</label>
       <slot></slot>      
       <span v-show="problems && label" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
